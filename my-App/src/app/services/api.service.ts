@@ -7,6 +7,6 @@ import { HttpClient } from "@angular/common/http";
  export class ApiService{
  constructor(private httpclient :HttpClient){ }
     getDetail():Observable <any>{
-return this.httpclient.get("https://jsonplaceholder.typicode.com/comments?postId=1");
+return this.httpclient.get("https://jsonplaceholder.typicode.com/comments");
     }
 }

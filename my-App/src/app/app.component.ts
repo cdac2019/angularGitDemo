@@ -8,20 +8,5 @@ import { Details } from "./classes/details";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private api_service : ApiService ){
-     
-  }
-  listdetals: Details[];
-  path:any;
-   
-  ngOnInit(){
-this.api_service.getDetail()
-.subscribe
-(
-   data=>{
-this.listdetals=data;
-   }
-   
-   );
-  }
+  title = 'M6y-App';
 }
